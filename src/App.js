@@ -30,7 +30,7 @@ function App() {
           <Route path='/articles/:id'>
             <Article />
           </Route>
-          <Route path='*'>
+          <Route path='*'> {/* catch-all route, enables user who makes path mistake to be redirected home. */}
             <Redirect to={'/'} />
           </Route>
         </Switch>
